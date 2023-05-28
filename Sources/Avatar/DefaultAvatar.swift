@@ -1,9 +1,9 @@
-import SwiftUI
 import PreviewSnapshots
+import SwiftUI
 
 public struct DefaultAvatar: View {
   public init() {}
-  
+
   public var body: some View {
     Image("empty-background", bundle: .module)
       .overlay {
@@ -35,4 +35,3 @@ struct DefaultAvatarPreviews: PreviewProvider {
     )
   }
 }
-

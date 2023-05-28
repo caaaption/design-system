@@ -4,7 +4,7 @@ import SwiftUI
 public struct Avatar: View {
   let url: URL?
   let scale: CGFloat
-  
+
   public init(
     url: URL?,
     scale: CGFloat = 1
@@ -12,7 +12,7 @@ public struct Avatar: View {
     self.url = url
     self.scale = scale
   }
-  
+
   public var body: some View {
     AsyncImage(url: url, scale: scale) { phase in
       switch phase {
