@@ -16,10 +16,10 @@ jobs:
       
       - name: Check Git Status
         id: git-status
-        run: echo "has_changes=$(git status --porcelain)" >> $GITHUB_OUTPUT
+        run: echo "has_changes=$(git diff --name-only | wc -l)" >> $GITHUB_OUTPUT
       
       - uses: peter-evans/create-pull-request@v5
-        if: steps.git-status.outputs.has_changes == 'true'
+        if: steps.git-status.outputs.count > 0
         with:
           delete-branch: true
           author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
