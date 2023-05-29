@@ -1,0 +1,25 @@
+name: Format
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.swift'
+
+jobs:
+  swift-format:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: make format
+      
+      - continue-on-error: true
+        uses: peter-evans/create-pull-request@v5
+        with:
+          delete-branch: true
+          author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          branch-suffix: short-commit-hash
+          commit-message: Run swift-format
+          title: Run swift-format
