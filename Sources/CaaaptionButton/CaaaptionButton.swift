@@ -7,8 +7,7 @@ public struct CaaaptionButton<Label: View>: View {
   @ViewBuilder let label: () -> Label
   let loading: Bool
 
-  public init(
-    loading: Bool = false,
+  public init(loading: Bool = false,
     action: @escaping () -> Void,
     @ViewBuilder label: @escaping () -> Label
   ) {
