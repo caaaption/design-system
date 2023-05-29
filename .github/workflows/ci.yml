@@ -2,6 +2,8 @@ name: CI
 
 on:
   push:
+    paths:
+      - '**.swift'
   workflow_dispatch:
 
 jobs:
