@@ -16,7 +16,7 @@ jobs:
       
       - name: Check Git Status
         id: git-status
-        run: echo "name=has_changes::$(git status --porcelain)" >> $GITHUB_OUTPUT
+        run: echo "has_changes=$(git status --porcelain)" >> $GITHUB_OUTPUT
       
       - uses: peter-evans/create-pull-request@v5
         if: steps.git-status.outputs.has_changes == 'true'
