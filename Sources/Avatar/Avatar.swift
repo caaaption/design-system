@@ -12,7 +12,7 @@ public struct Avatar: View {
     self.url = url
     self.scale = scale
   }
-  
+
   public var body: some View {
     AsyncImage(url: url, scale: scale) { phase in
       switch phase {
@@ -24,8 +24,8 @@ public struct Avatar: View {
       default:
         DefaultAvatar()
       }
-}
-}
+    }
+  }
 }
 
 struct AvatarPreviews: PreviewProvider {

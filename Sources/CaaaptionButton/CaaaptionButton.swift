@@ -8,7 +8,7 @@ public struct CaaaptionButton<Label: View>: View {
   let loading: Bool
 
   public init(
-loading: Bool = false,
+    loading: Bool = false,
     action: @escaping () -> Void,
     @ViewBuilder label: @escaping () -> Label
   ) {
@@ -35,17 +35,13 @@ loading: Bool = false,
   }
 }
 
-
-
-
-
-
 struct CaaaptionButtonPreviews: PreviewProvider {
   static var previews: some View {
     snapshots
       .previews
       .previewLayout(.sizeThatFits)
   }
+
   static var snapshots: PreviewSnapshots<Bool> {
     PreviewSnapshots(
       configurations: [
