@@ -25,7 +25,7 @@ public struct Avatar: View {
         DefaultAvatar()
       }
 }
-  }
+}
 }
 
 struct AvatarPreviews: PreviewProvider {
