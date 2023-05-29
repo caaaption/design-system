@@ -24,7 +24,7 @@ public struct Avatar: View {
       default:
         DefaultAvatar()
       }
-    }
+}
   }
 }
 
