@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "swift-snapshot-testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-snapshot-testing",
+      "state" : {
+        "revision" : "cef5b3f6f11781dd4591bdd1dd0a3d22bd609334",
+        "version" : "1.11.0"
+      }
+    },
+    {
+      "identity" : "swiftui-preview-snapshots",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/doordash-oss/swiftui-preview-snapshots",
+      "state" : {
+        "revision" : "09964baa5084a4208b0730dbed067fe4ce5d4465",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
